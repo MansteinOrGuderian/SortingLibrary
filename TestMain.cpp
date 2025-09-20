@@ -14,5 +14,5 @@ int main() {
 		unsorted_array[i] = rand() % 1000;
 
 	for (int i = 0; i < array_size; i++) // Print filled array
-		std::cout << unsorted_array[i] << (i == array_size - 1 ? '\n' : ' '); 
+		std::cout << unsorted_array[i] << (i == array_size - 1 ? '\n' : ' ');
 }
