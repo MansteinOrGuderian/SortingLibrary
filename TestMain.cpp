@@ -2,7 +2,7 @@
 int main() {
 	std::cout << "Enter the amount of elements in array:\n";
 	int array_size = 0;
-	while (std::cin >> array_size) // Check, if array can exist
+	while (std::cin >> array_size) // Check for the existence of the array
 		if (array_size > 0)
 			break;
 		else
@@ -10,7 +10,7 @@ int main() {
 
 	int* unsorted_array = new int[array_size] (); // Initialize array with zeros
 
-	for (int i = 0; i < array_size; i++) // Randomly fill crated array with numbers 0-1000
+	for (int i = 0; i < array_size; i++) // Randomly fill created array with numbers 0-1000
 		unsorted_array[i] = rand() % 1000;
 
 	for (int i = 0; i < array_size; i++) // Print filled array
